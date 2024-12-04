@@ -1,0 +1,997 @@
+[2024-12-04 11:53:23,696] {processor.py:153} INFO - Started process (PID=7292) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:53:23,696] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:53:23,697] {logging_mixin.py:115} INFO - [2024-12-04 11:53:23,697] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:53:24,402] {logging_mixin.py:115} INFO - [2024-12-04 11:53:24,402] {utils.py:145} INFO - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2024-12-04 11:53:24,402] {logging_mixin.py:115} INFO - [2024-12-04 11:53:24,402] {utils.py:157} INFO - NumExpr defaulting to 8 threads.
+[2024-12-04 11:53:24,576] {processor.py:651} INFO - DAG(s) dict_keys(['Lead_scoring_inference_pipeline']) retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:53:24,584] {logging_mixin.py:115} INFO - [2024-12-04 11:53:24,583] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-12-04 11:53:24,596] {logging_mixin.py:115} INFO - [2024-12-04 11:53:24,596] {dag.py:2968} INFO - Setting next_dagrun for Lead_scoring_inference_pipeline to 2024-12-04T10:00:00+00:00, run_after=2024-12-04T11:00:00+00:00
+[2024-12-04 11:53:24,622] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.929 seconds
+[2024-12-04 11:54:08,307] {processor.py:153} INFO - Started process (PID=7368) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:54:08,309] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:54:08,309] {logging_mixin.py:115} INFO - [2024-12-04 11:54:08,309] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:54:08,318] {logging_mixin.py:115} INFO - [2024-12-04 11:54:08,317] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:54:08,318] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:54:08,343] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 11:54:47,713] {processor.py:153} INFO - Started process (PID=7425) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:54:47,714] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:54:47,715] {logging_mixin.py:115} INFO - [2024-12-04 11:54:47,715] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:54:47,722] {logging_mixin.py:115} INFO - [2024-12-04 11:54:47,721] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:54:47,722] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:54:47,747] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 11:55:22,756] {processor.py:153} INFO - Started process (PID=7473) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:55:22,758] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:55:22,759] {logging_mixin.py:115} INFO - [2024-12-04 11:55:22,759] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:55:22,766] {logging_mixin.py:115} INFO - [2024-12-04 11:55:22,765] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:55:22,766] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:55:22,792] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 11:56:04,628] {processor.py:153} INFO - Started process (PID=7528) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:56:04,629] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:56:04,630] {logging_mixin.py:115} INFO - [2024-12-04 11:56:04,629] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:56:04,637] {logging_mixin.py:115} INFO - [2024-12-04 11:56:04,637] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:56:04,638] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:56:04,662] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 11:56:44,740] {processor.py:153} INFO - Started process (PID=7581) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:56:44,742] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:56:44,742] {logging_mixin.py:115} INFO - [2024-12-04 11:56:44,742] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:56:44,750] {logging_mixin.py:115} INFO - [2024-12-04 11:56:44,749] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:56:44,750] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:56:44,773] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.036 seconds
+[2024-12-04 11:57:20,001] {processor.py:153} INFO - Started process (PID=7633) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:57:20,003] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:57:20,003] {logging_mixin.py:115} INFO - [2024-12-04 11:57:20,003] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:57:20,013] {logging_mixin.py:115} INFO - [2024-12-04 11:57:20,012] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:57:20,013] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:57:20,035] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.037 seconds
+[2024-12-04 11:57:55,952] {processor.py:153} INFO - Started process (PID=7685) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:57:55,954] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:57:55,955] {logging_mixin.py:115} INFO - [2024-12-04 11:57:55,955] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:57:55,964] {logging_mixin.py:115} INFO - [2024-12-04 11:57:55,963] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:57:55,964] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:57:55,991] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.042 seconds
+[2024-12-04 11:58:28,234] {processor.py:153} INFO - Started process (PID=7732) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:58:28,235] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:58:28,235] {logging_mixin.py:115} INFO - [2024-12-04 11:58:28,235] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:58:28,244] {logging_mixin.py:115} INFO - [2024-12-04 11:58:28,243] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:58:28,244] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:58:28,270] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 11:59:04,273] {processor.py:153} INFO - Started process (PID=7797) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:59:04,274] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:59:04,275] {logging_mixin.py:115} INFO - [2024-12-04 11:59:04,275] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:59:04,283] {logging_mixin.py:115} INFO - [2024-12-04 11:59:04,283] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:59:04,284] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:59:04,309] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.040 seconds
+[2024-12-04 11:59:42,742] {processor.py:153} INFO - Started process (PID=7854) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:59:42,743] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 11:59:42,744] {logging_mixin.py:115} INFO - [2024-12-04 11:59:42,744] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:59:42,752] {logging_mixin.py:115} INFO - [2024-12-04 11:59:42,752] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 11:59:42,753] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 11:59:42,779] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.040 seconds
+[2024-12-04 12:00:19,093] {processor.py:153} INFO - Started process (PID=7904) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:00:19,094] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:00:19,095] {logging_mixin.py:115} INFO - [2024-12-04 12:00:19,095] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:00:19,103] {logging_mixin.py:115} INFO - [2024-12-04 12:00:19,102] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:00:19,103] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:00:19,128] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:00:54,905] {processor.py:153} INFO - Started process (PID=7955) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:00:54,907] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:00:54,908] {logging_mixin.py:115} INFO - [2024-12-04 12:00:54,907] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:00:54,916] {logging_mixin.py:115} INFO - [2024-12-04 12:00:54,915] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:00:54,916] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:00:54,942] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.040 seconds
+[2024-12-04 12:01:35,226] {processor.py:153} INFO - Started process (PID=8008) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:01:35,227] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:01:35,228] {logging_mixin.py:115} INFO - [2024-12-04 12:01:35,228] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:01:35,236] {logging_mixin.py:115} INFO - [2024-12-04 12:01:35,236] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:01:35,237] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:01:35,262] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.040 seconds
+[2024-12-04 12:02:11,738] {processor.py:153} INFO - Started process (PID=8059) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:02:11,739] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:02:11,740] {logging_mixin.py:115} INFO - [2024-12-04 12:02:11,740] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:02:11,748] {logging_mixin.py:115} INFO - [2024-12-04 12:02:11,747] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:02:11,749] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:02:11,775] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.041 seconds
+[2024-12-04 12:02:51,198] {processor.py:153} INFO - Started process (PID=8111) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:02:51,201] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:02:51,202] {logging_mixin.py:115} INFO - [2024-12-04 12:02:51,202] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:02:51,210] {logging_mixin.py:115} INFO - [2024-12-04 12:02:51,209] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:02:51,210] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:02:51,236] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.042 seconds
+[2024-12-04 12:03:35,180] {processor.py:153} INFO - Started process (PID=8168) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:03:35,183] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:03:35,184] {logging_mixin.py:115} INFO - [2024-12-04 12:03:35,184] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:03:35,192] {logging_mixin.py:115} INFO - [2024-12-04 12:03:35,191] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:03:35,192] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:03:35,218] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.041 seconds
+[2024-12-04 12:04:00,685] {processor.py:153} INFO - Started process (PID=8208) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:04:00,685] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:04:00,686] {logging_mixin.py:115} INFO - [2024-12-04 12:04:00,686] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:04:00,695] {logging_mixin.py:115} INFO - [2024-12-04 12:04:00,694] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:04:00,695] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:04:00,720] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:04:40,316] {processor.py:153} INFO - Started process (PID=8262) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:04:40,318] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:04:40,319] {logging_mixin.py:115} INFO - [2024-12-04 12:04:40,318] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:04:40,327] {logging_mixin.py:115} INFO - [2024-12-04 12:04:40,326] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:04:40,327] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:04:40,352] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:05:17,350] {processor.py:153} INFO - Started process (PID=8312) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:05:17,351] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:05:17,352] {logging_mixin.py:115} INFO - [2024-12-04 12:05:17,352] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:05:17,360] {logging_mixin.py:115} INFO - [2024-12-04 12:05:17,359] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:05:17,360] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:05:17,384] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:06:00,072] {processor.py:153} INFO - Started process (PID=8367) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:06:00,074] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:06:00,074] {logging_mixin.py:115} INFO - [2024-12-04 12:06:00,074] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:06:00,083] {logging_mixin.py:115} INFO - [2024-12-04 12:06:00,082] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:06:00,083] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:06:00,107] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:06:39,493] {processor.py:153} INFO - Started process (PID=8423) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:06:39,495] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:06:39,495] {logging_mixin.py:115} INFO - [2024-12-04 12:06:39,495] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:06:39,503] {logging_mixin.py:115} INFO - [2024-12-04 12:06:39,503] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:06:39,504] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:06:39,529] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.040 seconds
+[2024-12-04 12:07:18,182] {processor.py:153} INFO - Started process (PID=8481) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:07:18,184] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:07:18,184] {logging_mixin.py:115} INFO - [2024-12-04 12:07:18,184] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:07:18,193] {logging_mixin.py:115} INFO - [2024-12-04 12:07:18,192] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:07:18,193] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:07:18,221] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.043 seconds
+[2024-12-04 12:07:57,605] {processor.py:153} INFO - Started process (PID=8534) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:07:57,606] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:07:57,607] {logging_mixin.py:115} INFO - [2024-12-04 12:07:57,607] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:07:57,615] {logging_mixin.py:115} INFO - [2024-12-04 12:07:57,614] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:07:57,615] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:07:57,640] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:08:34,325] {processor.py:153} INFO - Started process (PID=8584) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:08:34,327] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:08:34,327] {logging_mixin.py:115} INFO - [2024-12-04 12:08:34,327] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:08:34,336] {logging_mixin.py:115} INFO - [2024-12-04 12:08:34,335] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:08:34,336] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:08:34,361] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:09:10,665] {processor.py:153} INFO - Started process (PID=8635) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:09:10,667] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:09:10,668] {logging_mixin.py:115} INFO - [2024-12-04 12:09:10,668] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:09:10,676] {logging_mixin.py:115} INFO - [2024-12-04 12:09:10,675] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:09:10,676] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:09:10,702] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.040 seconds
+[2024-12-04 12:09:47,442] {processor.py:153} INFO - Started process (PID=8685) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:09:47,443] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:09:47,444] {logging_mixin.py:115} INFO - [2024-12-04 12:09:47,444] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:09:47,452] {logging_mixin.py:115} INFO - [2024-12-04 12:09:47,451] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:09:47,452] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:09:47,478] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.040 seconds
+[2024-12-04 12:10:26,957] {processor.py:153} INFO - Started process (PID=8747) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:10:26,959] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:10:26,959] {logging_mixin.py:115} INFO - [2024-12-04 12:10:26,959] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:10:26,966] {logging_mixin.py:115} INFO - [2024-12-04 12:10:26,966] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:10:26,967] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:10:26,991] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.037 seconds
+[2024-12-04 12:11:03,760] {processor.py:153} INFO - Started process (PID=8831) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:11:03,762] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:11:03,763] {logging_mixin.py:115} INFO - [2024-12-04 12:11:03,762] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:11:03,770] {logging_mixin.py:115} INFO - [2024-12-04 12:11:03,769] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:11:03,770] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:11:03,795] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:11:38,912] {processor.py:153} INFO - Started process (PID=8927) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:11:38,914] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:11:38,914] {logging_mixin.py:115} INFO - [2024-12-04 12:11:38,914] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:11:38,922] {logging_mixin.py:115} INFO - [2024-12-04 12:11:38,921] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:11:38,922] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:11:38,947] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:12:14,564] {processor.py:153} INFO - Started process (PID=9036) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:12:14,566] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:12:14,567] {logging_mixin.py:115} INFO - [2024-12-04 12:12:14,566] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:12:14,574] {logging_mixin.py:115} INFO - [2024-12-04 12:12:14,573] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:12:14,574] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:12:14,599] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:12:54,868] {processor.py:153} INFO - Started process (PID=9138) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:12:54,870] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:12:54,870] {logging_mixin.py:115} INFO - [2024-12-04 12:12:54,870] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:12:54,878] {logging_mixin.py:115} INFO - [2024-12-04 12:12:54,877] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:12:54,878] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:12:54,904] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:13:30,284] {processor.py:153} INFO - Started process (PID=9257) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:13:30,285] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:13:30,286] {logging_mixin.py:115} INFO - [2024-12-04 12:13:30,286] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:13:30,294] {logging_mixin.py:115} INFO - [2024-12-04 12:13:30,293] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:13:30,294] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:13:30,318] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.037 seconds
+[2024-12-04 12:14:03,201] {processor.py:153} INFO - Started process (PID=9361) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:14:03,202] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:14:03,203] {logging_mixin.py:115} INFO - [2024-12-04 12:14:03,203] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:14:03,211] {logging_mixin.py:115} INFO - [2024-12-04 12:14:03,210] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:14:03,211] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:14:03,235] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.037 seconds
+[2024-12-04 12:14:41,676] {processor.py:153} INFO - Started process (PID=9456) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:14:41,678] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:14:41,678] {logging_mixin.py:115} INFO - [2024-12-04 12:14:41,678] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:14:41,686] {logging_mixin.py:115} INFO - [2024-12-04 12:14:41,685] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:14:41,686] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:14:41,711] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:15:19,057] {processor.py:153} INFO - Started process (PID=9523) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:15:19,060] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:15:19,061] {logging_mixin.py:115} INFO - [2024-12-04 12:15:19,061] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:15:19,069] {logging_mixin.py:115} INFO - [2024-12-04 12:15:19,068] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:15:19,069] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:15:19,096] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.043 seconds
+[2024-12-04 12:15:56,476] {processor.py:153} INFO - Started process (PID=9596) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:15:56,478] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:15:56,478] {logging_mixin.py:115} INFO - [2024-12-04 12:15:56,478] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:15:56,486] {logging_mixin.py:115} INFO - [2024-12-04 12:15:56,485] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:15:56,486] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:15:56,512] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:16:31,348] {processor.py:153} INFO - Started process (PID=9652) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:16:31,350] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:16:31,350] {logging_mixin.py:115} INFO - [2024-12-04 12:16:31,350] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:16:31,358] {logging_mixin.py:115} INFO - [2024-12-04 12:16:31,357] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:16:31,358] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:16:31,381] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.036 seconds
+[2024-12-04 12:17:10,829] {processor.py:153} INFO - Started process (PID=9721) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:17:10,831] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:17:10,831] {logging_mixin.py:115} INFO - [2024-12-04 12:17:10,831] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:17:10,839] {logging_mixin.py:115} INFO - [2024-12-04 12:17:10,838] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:17:10,839] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:17:10,863] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:17:53,137] {processor.py:153} INFO - Started process (PID=9800) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:17:53,139] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:17:53,140] {logging_mixin.py:115} INFO - [2024-12-04 12:17:53,140] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:17:53,147] {logging_mixin.py:115} INFO - [2024-12-04 12:17:53,147] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:17:53,148] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:17:53,172] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:18:30,625] {processor.py:153} INFO - Started process (PID=9856) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:18:30,627] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:18:30,627] {logging_mixin.py:115} INFO - [2024-12-04 12:18:30,627] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:18:30,635] {logging_mixin.py:115} INFO - [2024-12-04 12:18:30,634] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:18:30,635] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:18:30,661] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.040 seconds
+[2024-12-04 12:19:04,097] {processor.py:153} INFO - Started process (PID=9904) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:19:04,098] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:19:04,098] {logging_mixin.py:115} INFO - [2024-12-04 12:19:04,098] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:19:04,106] {logging_mixin.py:115} INFO - [2024-12-04 12:19:04,105] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:19:04,106] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:19:04,131] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.037 seconds
+[2024-12-04 12:19:43,028] {processor.py:153} INFO - Started process (PID=9961) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:19:43,030] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:19:43,030] {logging_mixin.py:115} INFO - [2024-12-04 12:19:43,030] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:19:43,038] {logging_mixin.py:115} INFO - [2024-12-04 12:19:43,037] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:19:43,038] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:19:43,063] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:20:20,689] {processor.py:153} INFO - Started process (PID=10076) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:20:20,691] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:20:20,691] {logging_mixin.py:115} INFO - [2024-12-04 12:20:20,691] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:20:20,699] {logging_mixin.py:115} INFO - [2024-12-04 12:20:20,698] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:20:20,699] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:20:20,725] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:20:55,211] {processor.py:153} INFO - Started process (PID=10125) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:20:55,213] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:20:55,214] {logging_mixin.py:115} INFO - [2024-12-04 12:20:55,214] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:20:55,221] {logging_mixin.py:115} INFO - [2024-12-04 12:20:55,221] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:20:55,221] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:20:55,246] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.038 seconds
+[2024-12-04 12:21:29,816] {processor.py:153} INFO - Started process (PID=10174) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:21:29,818] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:21:29,819] {logging_mixin.py:115} INFO - [2024-12-04 12:21:29,819] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:21:29,827] {logging_mixin.py:115} INFO - [2024-12-04 12:21:29,826] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:21:29,827] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:21:29,854] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.041 seconds
+[2024-12-04 12:22:07,818] {processor.py:153} INFO - Started process (PID=10228) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:22:07,820] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:22:07,820] {logging_mixin.py:115} INFO - [2024-12-04 12:22:07,820] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:22:07,828] {logging_mixin.py:115} INFO - [2024-12-04 12:22:07,828] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:22:07,829] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:22:07,856] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.042 seconds
+[2024-12-04 12:22:43,629] {processor.py:153} INFO - Started process (PID=10280) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:22:43,630] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:22:43,631] {logging_mixin.py:115} INFO - [2024-12-04 12:22:43,631] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:22:43,639] {logging_mixin.py:115} INFO - [2024-12-04 12:22:43,638] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:22:43,639] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:22:43,678] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.053 seconds
+[2024-12-04 12:23:22,200] {processor.py:153} INFO - Started process (PID=10332) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:23:22,202] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:23:22,203] {logging_mixin.py:115} INFO - [2024-12-04 12:23:22,203] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:23:22,210] {logging_mixin.py:115} INFO - [2024-12-04 12:23:22,210] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:23:22,211] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:23:22,237] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:24:00,196] {processor.py:153} INFO - Started process (PID=10384) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:24:00,197] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:24:00,198] {logging_mixin.py:115} INFO - [2024-12-04 12:24:00,198] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:24:00,206] {logging_mixin.py:115} INFO - [2024-12-04 12:24:00,205] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:24:00,206] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:24:00,230] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.037 seconds
+[2024-12-04 12:24:39,840] {processor.py:153} INFO - Started process (PID=10439) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:24:39,841] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:24:39,842] {logging_mixin.py:115} INFO - [2024-12-04 12:24:39,842] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:24:39,850] {logging_mixin.py:115} INFO - [2024-12-04 12:24:39,849] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:24:39,850] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:24:39,876] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.039 seconds
+[2024-12-04 12:25:15,413] {processor.py:153} INFO - Started process (PID=10489) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:25:15,414] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:25:15,415] {logging_mixin.py:115} INFO - [2024-12-04 12:25:15,415] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:25:15,422] {logging_mixin.py:115} INFO - [2024-12-04 12:25:15,422] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:25:15,423] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:25:15,446] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.037 seconds
+[2024-12-04 12:25:52,004] {processor.py:153} INFO - Started process (PID=10544) to work on /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:25:52,006] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py for tasks to queue
+[2024-12-04 12:25:52,006] {logging_mixin.py:115} INFO - [2024-12-04 12:25:52,006] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:25:52,014] {logging_mixin.py:115} INFO - [2024-12-04 12:25:52,013] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 36, in <module>
+    utils = module_from_file("utils", "/airflow/dags/Lead_scoring_inference_pipeline/utils.py")
+  File "/home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py", line 33, in module_from_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dags/Lead_scoring_inference_pipeline/utils.py'
+[2024-12-04 12:25:52,014] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+[2024-12-04 12:25:52,058] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py took 0.057 seconds
